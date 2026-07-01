@@ -42,7 +42,7 @@ export default function Resume() {
       } else if (item.id === "e3") {
         title = "ថ្នាក់បំប៉នឯកទេសផ្នែក UX/UI";
         subtitle = "LinkIn Website (២០២២ - ២០២៣)";
-        desc = "សិក្សាអំពីជំនាញ ូUX/ UI Design។";
+        desc = "សិក្សាអំពីជំនាញ UX/ UI Design។";
       } else if (item.id === "x1") {
         title = "អភិវឌ្ឍគេហទំព័រ";
         subtitle = "បង្កើតគេហទំព័រផ្សព្វផ្សាយ (២០២៤ - ២០២៥)";
