@@ -235,7 +235,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Blog
     "blog.subtitle": "ចូលមើលទស្សនៈបស់ខ្ញុំ និងផ្តល់មតិកែលម្អ",
-    "blog.title": "ប្ទស្សនៈរបស់ខ្ញុំ",
+    "blog.title": "ទស្សនៈរបស់ខ្ញុំ",
     "blog.read_time": "នាទីអាន",
     "blog.share": "ចែករំលែកអត្ថបទ",
     "blog.finished": "អានរួចរាល់",
