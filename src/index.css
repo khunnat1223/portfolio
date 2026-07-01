@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Kantumruy+Pro:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Kantumruy Pro", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom light-theme palette */
+  --color-dark-bg: #FFFFFF;
+  --color-dark-sec: #F8FAFC;
+  --color-brand-orange: #F08C34;
+  --color-brand-green: #00C875;
+  --color-text-gray: #475569;
+}
+
+/* Premium light card and glass styling */
+.dark-card {
+  background-color: #F8FAFC;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 30px -15px rgba(15, 23, 42, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-card:hover {
+  border-color: rgba(240, 140, 52, 0.2);
+  box-shadow: 0 15px 35px -10px rgba(15, 23, 42, 0.08);
+}
+
+.dark-inset {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  box-shadow: inset 2px 2px 8px rgba(15, 23, 42, 0.02);
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #1E293B;
+}
+
+/* Global Light-Theme Overrides for text-white and subtle borders */
+#portfolio-app-root {
+  background-color: #FFFFFF !important;
+  color: #1E293B !important;
+}
+
+h1, h2, h3, h4, h5, h6, .text-white {
+  color: #0F172A !important;
+}
+
+/* Keep text-white for text inside solid colored buttons/links so it is readable */
+.bg-brand-orange .text-white,
+.bg-brand-orange select,
+.bg-gradient-to-tr .text-white,
+.bg-gradient-to-r .text-white,
+.bg-gradient-to-tr span,
+button.text-white[class*="bg-brand-orange"],
+button.text-white[class*="bg-gradient"],
+a.text-white[class*="bg-brand-orange"],
+a.text-white[class*="bg-gradient"],
+span.text-white[class*="bg-brand-orange"],
+span.text-white[class*="bg-gradient"],
+.bg-brand-orange span.text-white,
+.bg-brand-orange div.text-white {
+  color: #FFFFFF !important;
+}
+
+/* Dynamic border mapping for light theme */
+.border-white\/5 {
+  border-color: rgba(15, 23, 42, 0.06) !important;
+}
+.border-white\/10 {
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+/* Scrollbar customizations for light theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CBD5E1;
+}
